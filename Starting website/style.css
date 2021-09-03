@@ -283,9 +283,6 @@ a:hover {
     padding-left: 0;
 }
 
-#bloc-1-hero h1 {
-    font-size: 32px;
-}
 
 .navbar {
     margin-bottom: 0;
@@ -677,7 +674,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 1.5rem;
 }
 
 .tight-width-whitespace {
@@ -685,9 +682,8 @@ p {
     margin: auto auto auto auto;
 }
 
-.h1 {
-    font-size: 20px;
-    font-family: "Open Sans";
+h1 {
+    font-size: 8rem;
 }
 
 .cta-hero {
@@ -705,12 +701,12 @@ p {
 }
 
 h2 {
-    font-size: 22px;
+    font-size: 3rem;
     line-height: 1.4em;
 }
 
 h3 {
-    font-size: 15px;
+    font-size: 2rem;
     text-transform: uppercase;
     font-weight: 700;
     color: #333333!important;
