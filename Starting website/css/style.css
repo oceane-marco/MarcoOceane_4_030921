@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -317,6 +321,7 @@ a:hover {
 .nav > li {
   float: left;
   margin-top: 4px;
+  margin-left: 5px;
   font-size: 16px;
 }
 
@@ -326,7 +331,8 @@ a:hover {
 
 .nav > li a:hover,
 .nav > li a:focus {
-  background: transparent;
+  background: #ecb158;
+  border-radius: 5px;
 }
 
 .navbar-toggle {
@@ -352,6 +358,9 @@ a:hover {
   float: right;
   position: relative;
   z-index: 2;
+}
+.navbar-toggle:focus {
+  border: 3px dashed solid #ffb414;
 }
 
 @media (min-width: 768px) {
@@ -501,6 +510,10 @@ button {
 .form-control {
   border-color: rgba(0, 0, 0, 0.1);
   box-shadow: none;
+  color: #000000 !important;
+}
+.form-control:focus {
+  background-color: #ffb414;
 }
 
 .scrollToTop {
@@ -648,6 +661,7 @@ a {
   font-weight: 400;
   color: #000000 !important;
 }
+
 .fa {
   margin-top: 1rem;
   font-size: 3rem;
@@ -765,25 +779,26 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-  background-color:  #93211A;
+  background-color: #6a151e;
 }
 
 .tc-white {
-  color: #FFB414!important;
+  color: #ffb414 !important;
 }
 
 .btn-atomic-tangerine {
-  background: #93211A;
+  background: #6a151e;
   color: #ffffff !important;
 }
 
-.btn-atomic-tangerine:hover {
-  background: #C32C22!important;
+.btn-atomic-tangerine:hover,
+.btn-atomic-tangerine:focus {
+  background: #ab1b21 !important;
   color: #ffffff !important;
 }
 
 .ltc-white {
-  color: #FFB414!important;
+  color: #ffb414 !important;
 }
 
 .ltc-white:hover {
@@ -791,11 +806,11 @@ h4 {
 }
 
 .ltc-atomic-tangerine {
-  color:#93211A !important;
+  color: #6a151e !important;
 }
 
 .ltc-atomic-tangerine:hover {
-  color: #C32C22!important;
+  color: #ab1b21 !important;
 }
 
 .icon-dark-slate-blue {
@@ -806,6 +821,12 @@ h4 {
   width: 100%;
   object-fit: cover;
 }
+img:focus {
+  padding: 1rem;
+  border: 3px dashed solid #ffb414;
+}
+
+/*! image de fond */
 
 .bg-dots-bg {
   background-image: url("../img/dots-bg.png");
@@ -980,6 +1001,9 @@ h4 {
   .navbar-brand img {
     max-height: 40px;
     width: auto;
+  }
+  .navbar-brand:focus {
+    border: 2px dashed #ffb414;
   }
   .nav-invert .navbar-header {
     float: none;
