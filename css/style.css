@@ -359,8 +359,8 @@ a:hover {
   position: relative;
   z-index: 2;
 }
-.navbar-toggle:focus {
-  border: 3px dashed solid #ffb414;
+.navbar-brand:focus {
+  border: 2px dashed #ffb414;
 }
 
 @media (min-width: 768px) {
@@ -437,7 +437,7 @@ nav .caret {
 }
 
 .mg-md {
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -709,7 +709,7 @@ label {
 
 .social {
   max-width: 400px;
-  margin: auto auto auto auto;
+  margin: 5px;
 }
 
 h2 {
@@ -820,11 +820,19 @@ h4 {
 .img-responsive {
   width: 100%;
   object-fit: cover;
+  margin: 0;
 }
-img:focus {
-  padding: 1rem;
-  border: 3px dashed solid #ffb414;
+a:focus{
+  border: 3px dashed #ffb414;
 }
+.social:focus {
+  border: 3px dashed #ffb414;
+  padding: 0.5rem;
+  font-size: 3rem;
+  margin: 0%;
+  height: 50px;
+}
+
 
 /*! image de fond */
 
